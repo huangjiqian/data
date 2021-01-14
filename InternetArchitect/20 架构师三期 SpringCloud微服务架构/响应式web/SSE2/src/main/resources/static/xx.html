@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<script type="text/javascript">
+
+
+var sse = new EventSource("/sse");
+
+
+sse.onmessage = function (data){
+	
+	console.info(data);
+	document.getElementById("msg").innerText = data.data;
+}
+
+</script>
+
+
+
+</head>
+<body>
+
+<span id="msg">xxx</span>
+
+
+</body>
+</html>

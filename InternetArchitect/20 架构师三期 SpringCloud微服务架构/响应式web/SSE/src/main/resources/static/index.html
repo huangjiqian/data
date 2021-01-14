@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        console.info("司机听单中")
+        var source = new EventSource('listen/1');
+        source.onmessage = function (evt) {
+            console.info("听单")
+            console.info(evt.data);
+            document.getElementById("mydiv").innerText = evt.data;
+        }
+    </script>
+
+</head>
+<body>
+听单：
+<span id = "mydiv"></span>
+</body>
+</html>
