@@ -144,7 +144,7 @@ javac SocketIOProperties.java && java SocketIOProperties
       java    1231 root    5u  IPv6              21656       0t0      TCP *:websm (LISTEN)
   ```
 
-- 监听 9090 端口
+- 抓包
 
   ```shell
   tcpdump -nn -i ens33 port 9090
@@ -183,7 +183,7 @@ javac SocketClient.java && java SocketClient
       java    1231 root    5u  IPv6              21656       0t0      TCP *:websm (LISTEN)
   ```
 
-- 监听 9090 端口
+- 抓包
 
   ```shell
   # 命令
@@ -223,7 +223,7 @@ javac SocketClient.java && java SocketClient
       java    1231 root    5u  IPv6              21656       0t0      TCP *:websm (LISTEN)
   ```
 
-- 监听 9090 端口
+- 抓包
 
   ```shell
   # 命令
@@ -265,7 +265,7 @@ javac SocketClient.java && java SocketClient
   
   ```
 
-- 监听 9090 端口，没有变化
+- 抓包，没有变化
 
 ### 总结
 
